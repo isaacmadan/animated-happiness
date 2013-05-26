@@ -121,7 +121,7 @@ public class NaiveBayesClassifier {
 		try {
 			String line;
 			int lineIndex = 0;
-			reader = new BufferedReader(new FileReader("cs109-datasets-mac/" + filename));
+			reader = new BufferedReader(new FileReader("data/" + filename));
  
 			while ((line = reader.readLine()) != null) {
 				if(lineIndex == 0) numOutputVars = Integer.parseInt(line);
